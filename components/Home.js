@@ -11,7 +11,7 @@ function Home() {
   const [moviesData, setMoviesData] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/movies`)
+    fetch(`https://mymoviz-backend-iota-liard.vercel.app/movies`)
       .then((response) => response.json())
       .then((data) => {
         const formatted = data.movies.map((movie) => {
